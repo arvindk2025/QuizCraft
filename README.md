@@ -77,8 +77,8 @@ iii) **Quiz Results**:
 ### Backend Setup
 1. Clone the repository:
    ```sh
-     git clone https://github.com/yourusername/quiz-web-app.git
-     cd quiz-web-app
+     git clone https://github.com/arvindk2025/QuizCraft.git
+     cd QuizCraft
    ```
    
 2. Install backend dependencies:

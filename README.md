@@ -1,23 +1,66 @@
-# Quizzy (Quiz Web Application)
+# QuizCraft ( A MERN Stack Quiz Web-Application)
 
 A simple quiz application with user authentication using the MERN stack (MongoDB, Express.js, React.js, and Node.js). It incorporates full CRUD operations with token-based authentication (JWT).
 
 ## Features
 
-### Admin
-- **Login Authentication**: Admin login with error message for invalid credentials and redirection to the dashboard upon successful login.
-- **Quiz Management**: Add, Edit, and Delete quizzes. Quizzes include title, description (optional), and timer.
-- **Question Management**: Add, Edit, and Delete questions for each quiz. All questions are multiple-choice.
-- **View Quizzes**: View all quizzes added to the application.
-- **View Scores**: View scores of all users who attempted a quiz or any particular quiz.
-- **Dashboard**: View all necessary data on the admin dashboard.
+### 1) User Authentication ( Must )
+- **User Authentification And Authorization**: We are providing 2 types of role during signup.
+  
+    ```sh
+     1) User 2) Admin
+    ```
+- After Signup user or admin can login using email and password . For Example ->
+   
+    ```sh
+      email    : user3@gmail.com
+      Password : Arvind@123
+      Note : This is already created user if you want then you can create.
+    
+      email    : admin2@gmail.com
+      Password : Arvind@123
+      Note : This is already created admin if you want then you can create.
+    ```
 
-### User
-- **View Quizzes**: View all available quizzes added by the admin.
-- **Attempt Quizzes**: Answer questions in quizzes that the user has not attempted. Display an appropriate message if the user has attempted the quiz previously.
-- **View Scores**: View scores after completing a quiz.
-- **View Attempts**: View all previously attempted quizzes and scores.
-- **Dashboard**: View all necessary data on the user dashboard.
+### 2) Admin Functionality 
+
+i) **Login Authentication**:
+   ```
+    - Admin login with error message for invalid credentials and redirection to the dashboard upon successful login.
+   ```
+ii) **Quiz Creation** :
+   
+   ```
+    - Admin will be able to create new quizzes. Quizzes includes title , description & timer . And Qquestion
+    - Admin can create questions for quizes with options and correct answer.
+   ```
+iii) **Quiz Management** :
+
+   ```
+     - Admin will be able to Add, Edit & Delete questions for each quiz.
+   ```
+
+### 3) User Functionality 
+i) **Listing of All Quizzes**:
+   
+   ```
+    - User will be able to see all available quizzes added by the admin.
+    - I have implemented proper Pagination Functionality if available quizzes is large.
+   ```
+ii) **Taking a Quizz**:
+   
+   ```
+       - User will be able to take quizzes.
+       - Displaying only one question at a time with options. 
+       - Allowing users to select their answers and move to the next question.
+       - At the end of the quiz, displaying the user's score.
+   ```
+iii) **Quiz Results**:
+   
+   ```
+     - Storing and displaying quiz results after attempting and clicking on submit quiz.
+     - Showing the user's score, questions attempted and correct/incorrect answers.
+   ```
 
 ## Technologies Used
 - **Frontend**: React.js

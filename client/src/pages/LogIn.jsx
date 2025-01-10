@@ -37,7 +37,7 @@ const LogIn = () => {
   return (
     <div className='min-h-screen flex items-center justify-center '>
       <section>
-        <h1 className='text-center pb-5 text-4xl font-mono underline'>Quizzy </h1>
+        <h1 className='text-center pb-5 text-4xl font-mono underline'>QuizCraft</h1>
         <form
           onSubmit={handleSubmit(submitHandler)}
           className='flex flex-col gap-y-3 max-w-[480px] shadow-lg shadow-blue-300  border p-10 rounded-lg'
